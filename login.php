@@ -5,7 +5,7 @@ include 'config/config.php';
 $conn = getDatabaseConnection();
 
 if (isset($_SESSION['user_id'])) {
-    header('Location: ' . BASE_URL . 'index.php');
+    header('Location: ' . BASE_URL . 'dashboard/index.php');
     exit;
 }
 
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($user && password_verify($password, $user['password'])) {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
-            header('Location: ' . BASE_URL . 'index.php');
+            header('Location: ' . BASE_URL . 'dashboard/index.php');
             exit;
         } else {
             $error = 'Username atau password salah.';
