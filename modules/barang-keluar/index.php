@@ -63,6 +63,8 @@ $result = $conn->query($query);
                     <?php endif; ?>
                     </p>
                     <a href="<?php echo BASE_URL; ?>modules/barang-keluar/create.php" class="btn bg-gradient-primary color-white">Add</a>
+                    <a href="<?php echo BASE_URL; ?>modules/barang-keluar/export_csv.php" class="btn bg-gradient-success color-white">Generate Report</a>
+
                     <table class="table table-striped">
                       <thead>
                         <tr>
