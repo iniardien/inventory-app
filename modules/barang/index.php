@@ -21,7 +21,7 @@ $result = $conn->query($query);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Inventory App</title>
+    <title>Master Barang - Inventory App</title>
     <?php include '../../includes/header.php'; ?>
 </head>
 
@@ -36,7 +36,7 @@ $result = $conn->query($query);
                     <h3 class="page-title">
                         <span class="page-title-icon bg-gradient-primary text-white me-2">
                             <i class="mdi mdi-home"></i>
-                        </span> Dashboard
+                        </span> Master Barang
                     </h3>
                 </div>
                 <div class="row">
